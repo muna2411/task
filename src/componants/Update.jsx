@@ -27,7 +27,7 @@ const Update = () => {
        
 
   
-        fetch(`https://task-server-czdg0rszk-munas-projects.vercel.app/${_id}`, {
+        fetch(`https://task-server-tau-ten.vercel.app/menu/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

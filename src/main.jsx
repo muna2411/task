@@ -52,12 +52,12 @@ const router = createBrowserRouter([
       {
        path:'taskList',
        element: <TaskList></TaskList>,
-       loader: () => fetch('https://task-server-czdg0rszk-munas-projects.vercel.app'),
+       loader: () => fetch('https://task-server-tau-ten.vercel.app/menu'),
       },
       {
         path:'menu/:id',
         element:<Update></Update>,
-       loader: ({params}) => fetch(`https://task-server-czdg0rszk-munas-projects.vercel.app/${params.id}`)
+       loader: ({params}) => fetch(`https://task-server-tau-ten.vercel.app/menu/${params.id}`)
       }
      
       
