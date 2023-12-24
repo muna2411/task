@@ -18,7 +18,7 @@ const CreateTask = () => {
       const users = {name,description,ratings};
       console.log(user);
     
-      fetch('http://localhost:5000/menu',{
+      fetch('https://task-server-czdg0rszk-munas-projects.vercel.app',{
         method: 'POST',
         headers:{
           'content-type' : 'application/json'

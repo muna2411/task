@@ -16,7 +16,7 @@ import Dashboard from './componants/Dashboard.jsx';
 import CreateTask from './componants/CreateTask.jsx';
 import TaskList from './componants/TaskList.jsx';
 import Update from './componants/Update.jsx';
-import React from 'react';
+
 
 
 
@@ -52,12 +52,12 @@ const router = createBrowserRouter([
       {
        path:'taskList',
        element: <TaskList></TaskList>,
-       loader: () => fetch('http://localhost:5000/menu'),
+       loader: () => fetch('https://task-server-czdg0rszk-munas-projects.vercel.app'),
       },
       {
         path:'menu/:id',
         element:<Update></Update>,
-       loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+       loader: ({params}) => fetch(`https://task-server-czdg0rszk-munas-projects.vercel.app/${params.id}`)
       }
      
       

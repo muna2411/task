@@ -27,7 +27,7 @@ const Update = () => {
        
 
   
-        fetch(`http://localhost:5000/menu/${_id}`, {
+        fetch(`https://task-server-czdg0rszk-munas-projects.vercel.app/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
